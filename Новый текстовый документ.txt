@@ -1,0 +1,16 @@
+$("#form").submit(function (e) { 
+           e.preventDefault();
+            const form_data = $(this).serialize(); 
+            $.ajax({
+                type: "POST", 
+                url: "mail.php", 
+                data: form_data,
+                success: function () {
+                    
+                }
+            });
+        });
+
+/^[^\s@]+@[^\s@]+\.[^\s@]+$/ валидация
+8iB-5p5-9fp-KiY гугл
+0;g_5:_xHcB госуслуги

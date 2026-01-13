@@ -1,0 +1,40 @@
+html,
+html *,
+body,
+body * {
+    cursor: none;
+}
+
+.cursor_big,
+.cursor_small {
+  mix-blend-mode: normal;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.cursor_small {
+    z-index: 999999;
+    width: 10px;
+    height: 10px;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+.cursor_big {
+    z-index: 999998;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 177, 203);
+    border-radius: 15px;
+}

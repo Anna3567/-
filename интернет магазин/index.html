@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>интернет магазин</title>
+</head>
+
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="img/phone__logo.jpg" alt="логотип сайта" class="logo__img">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+                <div class="text-end me-5">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="header">
+        <nav class="nav">
+            <div class="header__content">
+                <div class="container__logo">
+                    <h4 class="logo playfair-display">Sell phone</h4>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item "><a href="#" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+                    <li class="nav__item item__theme">
+                        <div class="theme">
+                            <h4 class="theme__title">Смена темы</h4>
+                            <ul class="theme__list">
+                                <li class="theme__item">
+                                    <div class="theme__white" onclick='choiseWhite()'></div>
+                                </li>
+                                <li class="theme__item">
+                                    <div class="theme__dark" onclick=" choiseDark()"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="burger" onclick="burgerClick()">
+                    <div class="burger__line_1"></div>
+                    <div class="burger__line_2"></div>
+                    <div class="burger__line_3"></div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <button id="btn-menu" class="btn_menu">Открыть меню</button>
+            <div id="menu" class="header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item"> <a href="#">Главная</a></li>
+                    <li class="menu__item"> <a href="#">Корзина</a></li>
+                    <li class="menu__item"> <a href="#">Вход</a></li>
+                    <li class="menu__item"> <a href="#">Регистрация</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="clock">
+            <div class="container container_clock">
+                <div id="time">
+
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="container" id="title">
+                <h1 class="product__title" onclick="coolTitle()">HUAWEY Mate 9 First Impressions</h1>
+                <div class="itc-slider" data-slider="itc-slider">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                <img src="img/Huawei-Mate-9.jpg" alt="" class="shop__img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/Huawei-Mate-9.jpg" alt="" class="shop__img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/Huawei-Mate-9.jpg" alt="" class="shop__img">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="itc-slider-btn itc-slider-btn-prev" data-slide="prev"></button>
+                    <button class="itc-slider-btn itc-slider-btn-next" data-slide="next"></button>
+
+                </div>
+                <div id="accordion-1" class="accordion">
+                    <div class="itc-accordion-item">
+                        <h2 class="itc-accordion-header">Описание</h2>
+                        <div class="itc-accordion-body">
+                            <p class="shop__text">
+                                Huawei released the Mate 9 in January, while it has been a few months since
+                                it came out we still decided to take a look at it. I’d like to think of the Mate 9 as a
+                                mash up
+                                of the iPhone 7 Plus and the Samsung Galaxy Note 7. All three phones look similar inside
+                                and out
+                                and competing in the same phablet market. Huawei is taking aim at the US market with the
+                                Mate 9.
+                                It hopes to expound upon it world wide brand image. What you get with the Mate 9 is a
+                                huge 5.9
+                                inch screen, beefy battery, 4gb of ram, and a brand-new CPU.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="itc-accordion-item">
+                        <h2 class="itc-accordion-header">Цена</h2>
+                        <div class="itc--accordion-item-show"></div>
+                        <div class="itc-accordion-body">
+                            <p class="product__price" onclick="getSell()">20000р</p>
+                            <button class="product__btn" onclick="buttonTitle()">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="product__about">Описание</h2>
+                <div class="container__about">
+                    <p class="product__text">Huawei released the Mate 9 in January, while it has been a few months since
+                        it came out we still decided to take a look at it. I’d like to think of the Mate 9 as a mash up
+                        of the iPhone 7 Plus and the Samsung Galaxy Note 7. All three phones look similar inside and out
+                        and competing in the same phablet market. Huawei is taking aim at the US market with the Mate 9.
+                        It hopes to expound upon it world wide brand image. What you get with the Mate 9 is a huge 5.9
+                        inch screen, beefy battery, 4gb of ram, and a brand-new CPU.</p>
+                    <h2 class="product__text__price">Цена:</h2>
+                    <p class="product__price" onclick="getSell()">20000р</p>
+                    <button class="product__btn" onclick="buttonTitle()">Купить</button>
+                </div>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="container">
+                <ul class="list__cards">
+                    <li class="item__cards me-5">
+                        <div class="card" style="width: 18rem; height: 650px;">
+                            <img src="https://ulefonemobile.ru/wa-data/public/shop/products/27/01/127/images/388/388.750x0.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ulefone Note 7</h5>
+                                <p class="card-text">Ёмкость аккумулятора, мАч:3500
+                                    Диагональ экрана:6.1 дюйм
+                                    Оперативная память:1 Б
+                                    Встроенная память:16 ГБ
+                                    Разрешение основной тыловой камеры, Мп:8
+                                    Кол-во ядер процессора:4
+                                    Кол-во SIM:2
+                                    Версия ОС на начало продаж:Android 8.1
+                                </p>
+                                <a href="#" class="btn btn-primary">Купить</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item__cards">
+                        <div class="card" style="width: 18rem; height: 650px;">
+                            <img src="https://avatars.mds.yandex.net/i?id=e2ac64b14c72b7e8574edefc27e04025_l-5896716-images-thumbs&n=13"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Смартфон M1</h5>
+                                <p class="card-text">Артикул
+                                    217739698
+                                    Длина упаковки
+                                    10 см
+                                    Высота упаковки
+                                    10 см
+                                    Ширина упаковки
+                                    10 см</p>
+                                <a href="#" class="btn btn-primary">Купить</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="maps">
+            <div class="container">
+                <h1 class="maps__title">Наши магазины</h1>
+                <div class="google">
+                    <h3 class="google__map">Гугл карты</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4042.5594410713184!2d78.35858848232235!3d55.34386777252105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4302c88e97828dbb%3A0xffb3bda374b3bc32!2z0JLQtdGC0LXRgNC-0Lo!5e0!3m2!1sru!2sru!4v1728119405583!5m2!1sru!2sru"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="yandex">
+                    <div class="yandex_title">
+                        <svg width="500" height="100">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#e91313; stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#7b84fe; stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <text x="10" y="40" font-family="Arial" font-size="40" fill="url(#gradient)">
+                                Яндекс карты
+                            </text>
+                        </svg>
+                    </div>
+                    <iframe class="yandex_style"
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac07a0f1a7afe70efea060e532c991b3f914fe1586b6fe03baceb94a0e73136ff&amp;source=constructor"
+                        width="100%" height="400" frameborder=""></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="video">
+            <div class="container">
+                <video autoplay muted id="myVideo">
+                    <source src="video/video1.mp4" type="video/mp4">
+                    </source>
+                </video>
+                <div class="video_content">
+                    <h1 class="video__title">I bought the most BEAUTIFUL Phones on the Internet!</h1>
+                    <p class="video__text">I spend a LOT of time trying to make my videos as concise, polished and
+                        useful as
+                        possible for you </p>
+                    <div class="buttons__video">
+                        <div class="interface__buttons">
+                            <button id="play" class="video__btn" onclick="play()">Пауза</button>
+                            <button id="mute" class="video__btn" onclick="sound()">Включить звук</button>
+                        </div>
+                        <div class="switching">
+                            <button id="" class="video__btn" onclick="next()">Следующее</button>
+                            <button id="" class="video__btn" onclick="exit()">Назад</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; Sell phone 2022</p>
+
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/itc-slider.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/video-player.js"></script>
+</body>
+
+</html>

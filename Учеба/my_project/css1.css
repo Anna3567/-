@@ -1,0 +1,27 @@
+html, 
+html *, 
+body, 
+body * {
+  cursor: none;
+}
+.cursor_big,
+.cursor_small{
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	left: 0;
+	top: 0;
+	position: fixed;
+}
+.cursor_big{
+	width: 40px;
+	height: 40px;
+	background-color: rgb(163, 255, 255);
+
+	transition: width 0.2s, height 0.2s;
+}
+.cursor_small{
+	width: 20px;
+	height: 20px;
+	background-color: rgb(118, 216, 61);
+
+}

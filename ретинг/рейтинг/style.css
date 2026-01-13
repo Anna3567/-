@@ -1,0 +1,39 @@
+.nav_list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+li{
+    margin-right: 50px;
+}
+header, section,footer{
+    width: 800px; 
+    margin: 0 auto;
+}
+.rating_full{
+    background-color: greenyellow;
+    height: 20px;
+    width: 400px;
+}
+.rating_dun1{
+ background-color: cyan;  
+ height: 20px; 
+ width: 80%;
+}
+.rating_dun2{
+    background-color: cyan;  
+    height: 20px; 
+    width: 70%;
+}
+.rating_list{
+    list-style: none;
+}
+.rating_dun3{
+        background-color: cyan;  
+        height: 20px; 
+        width: 40%;
+}
+.nav_item:hover{
+    color: lightcoral;
+    cursor: pointer;
+}

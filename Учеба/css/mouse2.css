@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	cursor: none;
+  }
+  
+  body:hover #custom-cursor {
+	opacity: 1;
+  }
+  
+  main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0E67AD;
+  }
+  
+  .hover-container {
+	width: 50%;
+	min-width: max-content;
+	max-height: 75vh;
+	max-width: 75vh;
+	aspect-ratio: 1;
+	box-sizing: border-box;
+	border-radius: 16px;
+	padding: 32px;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	justify-content: center;
+	text-align: center;
+  }
+  
+  #custom-cursor {
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	opacity: 0;
+	pointer-events: none;
+	mix-blend-mode: difference;
+	transition: transform 500ms;
+  }
+  
+  #custom-cursor::after {
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	border: 1px solid white;
+	width: 16px;
+	height: 16px;
+  }
+  
+  #custom-cursor.zoom {
+	transform: scale(3);
+  }
